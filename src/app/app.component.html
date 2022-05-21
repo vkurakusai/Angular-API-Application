@@ -1,0 +1,21 @@
+<h2>API Based task</h2>
+
+
+<button type="button" class="btn btn-primary" *ngIf="element == false" (click)="showData()">API 1 Show data</button>
+<button type="button" class="btn btn-primary"*ngIf="element == true"  (click)="hideData()">API 1 Hide data</button>
+
+&nbsp;
+
+<button (click)="addApiTwo()" type="button" class="btn btn-primary">API 2</button> 
+  <ng-container #api></ng-container>
+
+
+  <!-- <li>{{ TIME_SERIES_INTRADAY | json }}</li> -->
+
+  <div *ngIf="element == true">
+    <li>{{ TIME_SERIES_INTRADAY | json }}</li>
+  </div>
+  
+
+  
+
